@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fusion evaluation survey">
+  <title>Fusion Evaluation Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topline">
+      <span class="study-mark">FUSION EVALUATION SURVEY</span>
+      <span id="participant-label" class="participant-label"></span>
+    </header>
+
+    <section id="welcome" class="panel">
+      <h1>Thank you for participating</h1>
+      <p>We are conducting this survey to evaluate image-based people counting.</p>
+      <p>Please complete the survey alone and only once.</p>
+      <p>Your participant ID is shown below. Keep it if you need to refer to your submission.</p>
+      <div class="id-box">
+        <span class="muted">Participant ID</span>
+        <strong id="welcome-participant-id"></strong>
+      </div>
+      <p class="disclaimer">This survey is not an official academic survey and has not been reviewed or approved by an ethics board.</p>
+      <button id="begin-button" class="primary">Begin</button>
+    </section>
+
+    <section id="instructions-normal" class="panel hidden">
+      <h1>Instructions</h1>
+      <p>You will see five images, one at a time. For each image, report how many people you see and how confident you are in your answer.</p>
+      <p>You may take as much time as you need to view each image and answer.</p>
+      <button id="start-normal-button" class="primary">Continue</button>
+    </section>
+
+    <section id="trial" class="panel hidden" aria-live="polite">
+      <div class="trial-heading">
+        <div>
+          <p id="stage-label" class="eyebrow"></p>
+          <h1 id="trial-title">Image</h1>
+        </div>
+        <p id="trial-count" class="trial-count"></p>
+      </div>
+
+      <div id="image-frame" class="image-frame">
+        <img id="trial-image" alt="Study image">
+        <div id="image-placeholder" class="image-placeholder hidden">Image is not available.</div>
+      </div>
+
+      <p id="image-type-label" class="image-type-label"></p>
+
+      <form id="response-form">
+        <fieldset>
+          <legend>How many people are in this image?</legend>
+          <div class="choice-row" id="people-choices">
+            <label><input type="radio" name="people" value="0" required><span>0</span></label>
+            <label><input type="radio" name="people" value="1"><span>1</span></label>
+            <label><input type="radio" name="people" value="2"><span>2</span></label>
+            <label><input type="radio" name="people" value="3"><span>3</span></label>
+            <label><input type="radio" name="people" value="4"><span>4</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>How confident are you in your answer?</legend>
+          <div class="confidence-list">
+            <label><input type="radio" name="confidence" value="1" required><span>1 — Not at all confident</span></label>
+            <label><input type="radio" name="confidence" value="2"><span>2 — Slightly confident</span></label>
+            <label><input type="radio" name="confidence" value="3"><span>3 — Moderately confident</span></label>
+            <label><input type="radio" name="confidence" value="4"><span>4 — Very confident</span></label>
+            <label><input type="radio" name="confidence" value="5"><span>5 — Completely confident</span></label>
+          </div>
+        </fieldset>
+
+        <button id="next-button" class="primary" type="submit" disabled>Next</button>
+      </form>
+    </section>
+
+    <section id="instructions-timed" class="panel hidden">
+      <h1>Instructions</h1>
+      <p>For the next five trials, each image will appear for one second and then disappear.</p>
+      <p>After the image disappears, answer the same two questions. There will be no visible countdown or timer.</p>
+      <button id="start-timed-button" class="primary">Continue</button>
+    </section>
+
+    <section id="complete" class="panel hidden">
+      <h1>Thank you</h1>
+      <p id="completion-message">Your responses have been submitted.</p>
+      <p class="muted">Participant ID: <strong id="completion-id"></strong></p>
+    </section>
+
+    <section id="fatal-error" class="panel hidden">
+      <h1>Unable to start the survey</h1>
+      <p id="fatal-message"></p>
+      <p>Please contact the survey administrator.</p>
+    </section>
+    <footer>Do not refresh or close this page while completing the survey.</footer>
+  </main>
+  <script src="survey.js"></script>
+</body>
+</html>

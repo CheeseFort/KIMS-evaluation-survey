@@ -1,0 +1,634 @@
+{
+  "images": [
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_01",
+      "path": "images/scene_01/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_01",
+      "path": "images/scene_01/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_01",
+      "path": "images/scene_01/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_02",
+      "path": "images/scene_01/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_02",
+      "path": "images/scene_01/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "fusion_02",
+      "path": "images/scene_01/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "ir",
+      "path": "images/scene_01/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "ir",
+      "path": "images/scene_01/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_01",
+      "image_type": "rgb",
+      "path": "images/scene_01/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "fusion_01",
+      "path": "images/scene_02/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "fusion_02",
+      "path": "images/scene_02/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "fusion_02",
+      "path": "images/scene_02/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "ir",
+      "path": "images/scene_02/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "ir",
+      "path": "images/scene_02/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "ir",
+      "path": "images/scene_02/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "rgb",
+      "path": "images/scene_02/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "rgb",
+      "path": "images/scene_02/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "rgb",
+      "path": "images/scene_02/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "rgb",
+      "path": "images/scene_02/rgb/04.jpg"
+    },
+    {
+      "scene_id": "scene_02",
+      "image_type": "rgb",
+      "path": "images/scene_02/rgb/05.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_01",
+      "path": "images/scene_03/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_01",
+      "path": "images/scene_03/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_01",
+      "path": "images/scene_03/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_01",
+      "path": "images/scene_03/fusion_01/04.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_02",
+      "path": "images/scene_03/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_02",
+      "path": "images/scene_03/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "fusion_02",
+      "path": "images/scene_03/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "ir",
+      "path": "images/scene_03/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "ir",
+      "path": "images/scene_03/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "ir",
+      "path": "images/scene_03/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "ir",
+      "path": "images/scene_03/ir/04.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "rgb",
+      "path": "images/scene_03/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "rgb",
+      "path": "images/scene_03/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "rgb",
+      "path": "images/scene_03/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_03",
+      "image_type": "rgb",
+      "path": "images/scene_03/rgb/04.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_01",
+      "path": "images/scene_04/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_01",
+      "path": "images/scene_04/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_01",
+      "path": "images/scene_04/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_02",
+      "path": "images/scene_04/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_02",
+      "path": "images/scene_04/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_02",
+      "path": "images/scene_04/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "fusion_02",
+      "path": "images/scene_04/fusion_02/04.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "ir",
+      "path": "images/scene_04/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "ir",
+      "path": "images/scene_04/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "ir",
+      "path": "images/scene_04/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "ir",
+      "path": "images/scene_04/ir/04.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "ir",
+      "path": "images/scene_04/ir/05.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "rgb",
+      "path": "images/scene_04/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "rgb",
+      "path": "images/scene_04/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "rgb",
+      "path": "images/scene_04/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_04",
+      "image_type": "rgb",
+      "path": "images/scene_04/rgb/04.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_01",
+      "path": "images/scene_05/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_01",
+      "path": "images/scene_05/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_02",
+      "path": "images/scene_05/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_02",
+      "path": "images/scene_05/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_02",
+      "path": "images/scene_05/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_02",
+      "path": "images/scene_05/fusion_02/04.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "fusion_02",
+      "path": "images/scene_05/fusion_02/05.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "ir",
+      "path": "images/scene_05/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "ir",
+      "path": "images/scene_05/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "ir",
+      "path": "images/scene_05/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "rgb",
+      "path": "images/scene_05/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "rgb",
+      "path": "images/scene_05/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_05",
+      "image_type": "rgb",
+      "path": "images/scene_05/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_01",
+      "path": "images/scene_06/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_01",
+      "path": "images/scene_06/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_01",
+      "path": "images/scene_06/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_01",
+      "path": "images/scene_06/fusion_01/04.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_01",
+      "path": "images/scene_06/fusion_01/05.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "fusion_02",
+      "path": "images/scene_06/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "ir",
+      "path": "images/scene_06/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "ir",
+      "path": "images/scene_06/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "rgb",
+      "path": "images/scene_06/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_06",
+      "image_type": "rgb",
+      "path": "images/scene_06/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_01",
+      "path": "images/scene_07/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_01",
+      "path": "images/scene_07/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_02",
+      "path": "images/scene_07/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_02",
+      "path": "images/scene_07/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_02",
+      "path": "images/scene_07/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_02",
+      "path": "images/scene_07/fusion_02/04.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_02",
+      "path": "images/scene_07/fusion_02/05.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "ir",
+      "path": "images/scene_07/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "ir",
+      "path": "images/scene_07/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "ir",
+      "path": "images/scene_07/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "rgb",
+      "path": "images/scene_07/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "rgb",
+      "path": "images/scene_07/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/04.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_02",
+      "path": "images/scene_08/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_02",
+      "path": "images/scene_08/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_02",
+      "path": "images/scene_08/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_02",
+      "path": "images/scene_08/fusion_02/04.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_02",
+      "path": "images/scene_08/fusion_02/05.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "ir",
+      "path": "images/scene_08/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/04.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/05.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_02",
+      "path": "images/scene_09/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "ir",
+      "path": "images/scene_09/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "rgb",
+      "path": "images/scene_09/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "rgb",
+      "path": "images/scene_09/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "rgb",
+      "path": "images/scene_09/rgb/03.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/01.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/02.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/03.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/04.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/05.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_02",
+      "path": "images/scene_10/fusion_02/01.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_02",
+      "path": "images/scene_10/fusion_02/02.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_02",
+      "path": "images/scene_10/fusion_02/03.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_02",
+      "path": "images/scene_10/fusion_02/04.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_02",
+      "path": "images/scene_10/fusion_02/05.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/01.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/02.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/03.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/04.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/01.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/02.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/03.jpg"
+    }
+  ]
+}
