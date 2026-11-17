@@ -30,15 +30,80 @@ except ValueError:
         "so generated paths work on GitHub Pages."
     )
 
+# Read scene metadata.
+scenes_csv = image_root / "scenes.csv"
+
+if not scenes_csv.is_file():
+    sys.exit(f"ERROR: scene metadata file not found: {scenes_csv}")
+
+scenes = {}
+
+try:
+    with scenes_csv.open("r", encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+
+        required_columns = {"id", "description", "people"}
+        if not required_columns.issubset(reader.fieldnames or []):
+            sys.exit(
+                "ERROR: scenes.csv must contain columns: id, description, people"
+            )
+
+        for line_number, row in enumerate(reader, start=2):
+            scene_id = (row["id"] or "").strip()
+            description = (row["description"] or "").strip()
+            people_text = (row["people"] or "").strip()
+
+            if not scene_id:
+                sys.exit(f"ERROR: missing scene ID on CSV line {line_number}")
+
+            if scene_id in scenes:
+                sys.exit(f"ERROR: duplicate scene ID: {scene_id}")
+
+            if not description:
+                sys.exit(
+                    f"ERROR: missing description for {scene_id} "
+                    f"on CSV line {line_number}"
+                )
+
+            try:
+                people = int(people_text)
+                if people < 0:
+                    raise ValueError
+            except ValueError:
+                sys.exit(
+                    f"ERROR: invalid people count for {scene_id} "
+                    f"on CSV line {line_number}: {people_text!r}"
+                )
+
+            scenes[scene_id] = {
+                "description": description,
+                "people": people
+            }
+
+except (OSError, csv.Error) as e:
+    sys.exit(f"ERROR: could not read {scenes_csv}: {e}")
+
+if not scenes:
+    sys.exit("ERROR: scenes.csv contains no scene records.")
+
 records = []
 scene_count = 0
 bucket_count = 0
+found_scene_ids = set()
 
 # Expected: images/scene_id/image_type/image-file
 # Recursively includes image files below each image_type directory.
 for scene_dir in sorted(
     (p for p in image_root.iterdir() if p.is_dir()), key=lambda p: p.name
 ):
+    scene_id = scene_dir.name
+
+    if scene_id not in scenes:
+        sys.exit(
+            f"ERROR: scene folder '{scene_id}' has no entry in scenes.csv."
+        )
+
+    found_scene_ids.add(scene_id)
     scene_count += 1
 
     for type_dir in sorted(
@@ -56,12 +121,22 @@ for scene_dir in sorted(
             continue
 
         bucket_count += 1
+
         for image_file in image_files:
             records.append({
-                "scene_id": scene_dir.name,
+                "scene_id": scene_id,
                 "image_type": type_dir.name,
                 "path": image_file.relative_to(project_root).as_posix()
             })
+
+# Ensure every CSV scene has a corresponding image folder.
+missing_folders = set(scenes) - found_scene_ids
+
+if missing_folders:
+    sys.exit(
+        "ERROR: these scenes appear in scenes.csv but have no image folder: "
+        + ", ".join(sorted(missing_folders))
+    )
 
 records.sort(key=lambda r: (r["scene_id"], r["image_type"], r["path"]))
 
@@ -81,29 +156,39 @@ with json_path.open("w", encoding="utf-8") as f:
     json.dump({"images": records}, f, indent=2, ensure_ascii=False)
     f.write("\n")
 
-# Private Google Sheets template. Fill in description and actual_people.
+# Private Google Sheets template.
 with tsv_path.open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f, delimiter="\t", lineterminator="\n")
     writer.writerow([
         "scene_id", "image_type", "image_path", "description", "actual_people"
     ])
+
     for record in records:
+        metadata = scenes[record["scene_id"]]
+
         writer.writerow([
-            record["scene_id"], record["image_type"], record["path"], "", ""
+            record["scene_id"],
+            record["image_type"],
+            record["path"],
+            metadata["description"],
+            metadata["people"]
         ])
 
+print(f"Read {len(scenes)} scene records from {scenes_csv}.")
 print(f"Found {scene_count} scene folders.")
 print(f"Found {bucket_count} scene/type combinations.")
 print(f"Found {len(records)} image files.")
 print(f"Wrote public manifest: {json_path}")
 print(f"Wrote annotation template: {tsv_path}")
+
 if bucket_count < 10:
     print(
         "WARNING: fewer than 10 distinct scene/type combinations found. "
         "The survey needs at least 10.",
         file=sys.stderr
     )
+
 print(
     "\nPaste dataset.tsv into the private Google Sheet's Dataset tab. "
-    "Fill in description and actual_people there. Keep the spreadsheet private."
+    "Keep the spreadsheet private."
 )
