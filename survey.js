@@ -14,9 +14,7 @@ const CONFIG = {
   appsScriptUrl: "https://script.google.com/macros/s/AKfycbxAaaTC9A-ZNB4DJP1oQxx5C9f61Pwbco2mYLgCDD2qM2N0kBRp43WmRVGI9di5WlU/exec",
   trialsPerParticipant: 10,
   normalTrials: 5,
-  timedExposureMs: 1000,
-  participantStorageKey: "imageSurveyParticipantId",
-  assignmentStoragePrefix: "imageSurveyAssignment:"
+  timedExposureMs: 1000
 };
 
 const $ = (id) => document.getElementById(id);
@@ -30,18 +28,21 @@ let trialStartedAt = null;
 let currentImageVisibleAt = null;
 let responses = [];
 let isSubmitting = false;
+let surveySubmitted = false;
+
+window.addEventListener("beforeunload", (event) => {
+  if (surveySubmitted) return;
+
+  event.preventDefault();
+  event.returnValue = "";
+});
 
 function showSection(id) {
   sections.forEach((sectionId) => $(sectionId).classList.toggle("hidden", sectionId !== id));
 }
 
-function getOrCreateParticipantId() {
-  let id = localStorage.getItem(CONFIG.participantStorageKey);
-  if (!id) {
-    id = "P-" + crypto.randomUUID();
-    localStorage.setItem(CONFIG.participantStorageKey, id);
-  }
-  return id;
+function createParticipantId() {
+  return "P-" + crypto.randomUUID();
 }
 
 function hashString(value) {
@@ -257,11 +258,11 @@ async function submitAllResponses() {
       body: JSON.stringify(payload)
     });
 
+    surveySubmitted = true;
     showSection("complete");
     $("completion-id").textContent = participantId;
     $("completion-message").textContent =
       "Your submission has been sent. Thank you for participating.";
-    localStorage.removeItem(CONFIG.assignmentStoragePrefix + participantId);
   } catch (error) {
     isSubmitting = false;
     $("next-button").disabled = false;
@@ -305,7 +306,7 @@ async function handleResponseSubmit(event) {
 }
 
 async function init() {
-  participantId = getOrCreateParticipantId();
+  participantId = createParticipantId();
   $("participant-label").textContent = `Participant ID: ${participantId}`;
   $("welcome-participant-id").textContent = participantId;
 
@@ -315,17 +316,10 @@ async function init() {
     const manifest = await response.json();
     const buckets = normalizeManifest(manifest);
 
-    const storageKey = CONFIG.assignmentStoragePrefix + participantId;
-    const saved = localStorage.getItem(storageKey);
-    if (saved) {
-      assignment = JSON.parse(saved);
-    } else {
-      assignment = selectTrials(buckets, participantId);
-      localStorage.setItem(storageKey, JSON.stringify(assignment));
-    }
+    assignment = selectTrials(buckets, participantId);
 
     if (assignment.length !== CONFIG.trialsPerParticipant) {
-      throw new Error("Saved participant assignment is not valid.");
+      throw new Error("Participant assignment is not valid.");
     }
 
     $("begin-button").addEventListener("click", () => showSection("instructions-normal"));
