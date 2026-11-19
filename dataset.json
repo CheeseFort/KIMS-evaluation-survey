@@ -224,6 +224,156 @@
       "scene_id": "scene_06",
       "image_type": "rgb",
       "path": "images/scene_06/rgb/000532_rgb.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "fusion_01",
+      "path": "images/scene_07/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "ir",
+      "path": "images/scene_07/ir/ir_000075.jpg"
+    },
+    {
+      "scene_id": "scene_07",
+      "image_type": "rgb",
+      "path": "images/scene_07/rgb/rgb_000075.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/Fusion_Replay_screenshot_19.11.20262.png"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "fusion_01",
+      "path": "images/scene_08/fusion_01/Fusion_Replay_screenshot_19.11.20263.png"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "ir",
+      "path": "images/scene_08/ir/ir_000336.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "ir",
+      "path": "images/scene_08/ir/ir_000536.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "ir",
+      "path": "images/scene_08/ir/ir_000677.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/rgb_000336.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/rgb_000436.jpg"
+    },
+    {
+      "scene_id": "scene_08",
+      "image_type": "rgb",
+      "path": "images/scene_08/rgb/rgb_000577.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "fusion_01",
+      "path": "images/scene_09/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "ir",
+      "path": "images/scene_09/ir/ir_000120.jpg"
+    },
+    {
+      "scene_id": "scene_09",
+      "image_type": "rgb",
+      "path": "images/scene_09/rgb/rgb_000120.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/Fusion_Replay_screenshot_19.11.20262.png"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "fusion_01",
+      "path": "images/scene_10/fusion_01/Fusion_Replay_screenshot_19.11.20263.png"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/ir_000111.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/ir_000153.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "ir",
+      "path": "images/scene_10/ir/ir_000186.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/rgb_000111.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/rgb_000153.jpg"
+    },
+    {
+      "scene_id": "scene_10",
+      "image_type": "rgb",
+      "path": "images/scene_10/rgb/rgb_000186.jpg"
+    },
+    {
+      "scene_id": "scene_11",
+      "image_type": "fusion_01",
+      "path": "images/scene_11/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_11",
+      "image_type": "ir",
+      "path": "images/scene_11/ir/ir_000740.jpg"
+    },
+    {
+      "scene_id": "scene_11",
+      "image_type": "rgb",
+      "path": "images/scene_11/rgb/rgb_000740.jpg"
+    },
+    {
+      "scene_id": "scene_12",
+      "image_type": "fusion_01",
+      "path": "images/scene_12/fusion_01/Fusion_Replay_screenshot_19.11.2026.png"
+    },
+    {
+      "scene_id": "scene_12",
+      "image_type": "ir",
+      "path": "images/scene_12/ir/ir_000192.jpg"
+    },
+    {
+      "scene_id": "scene_12",
+      "image_type": "rgb",
+      "path": "images/scene_12/rgb/rgb_000192.jpg"
     }
   ]
 }

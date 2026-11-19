@@ -10,7 +10,7 @@ if "%~1"=="" (
 :process
 if "%~1"=="" goto done
 
-python "%~dp0downscale_rgb.py" "%~1" -o "%~dp0%~n1_rgb.jpg"
+python "%~dp0downscale_rgb.py" "%~1" -o "%~dp0rgb_%~n1.jpg"
 
 shift
 goto process

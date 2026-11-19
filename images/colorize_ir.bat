@@ -1,4 +1,3 @@
-
 @echo off
 setlocal
 
@@ -11,7 +10,7 @@ if "%~1"=="" (
 :process
 if "%~1"=="" goto done
 
-python "%~dp0colorize_ir.py" "%~1" -o "%~dp0%~n1_ir.jpg"
+python "%~dp0colorize_ir.py" "%~1" -o "%~dp0ir_%~n1.jpg"
 
 shift
 goto process
